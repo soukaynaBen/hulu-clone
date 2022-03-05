@@ -1,0 +1,40 @@
+const API_KEY=process.env.API_KEY;
+
+export default {
+    fetchAction:{
+        title:'Action',
+        url:`/discover/movie?api_key=${API_KEY}&with_genres=28`
+    },
+    fetchTrending:{
+        title:'Trending',
+        url:`/trending/movie/week?api_key=${API_KEY}&language=fr-FR`
+    },
+    fetchComedy:{
+        title:'Comedy',
+        url:`/discover/movie?api_key=${API_KEY}&with_genres=35`
+    },
+    fetchAction2:{
+        title:'Action',
+        url:`/discover/movie?api_key=${API_KEY}&with_genres=28`
+    },
+    fetchTrending2:{
+        title:'Trending',
+        url:`/trending/movie/week?api_key=${API_KEY}&language=en-US`
+    },
+    fetchComedy2:{
+        title:'Comedy',
+        url:`/discover/movie?api_key=${API_KEY}&with_genres=35`
+    },
+    fetchAction3:{
+        title:'Action',
+        url:`/discover/movie?api_key=${API_KEY}&with_genres=28`
+    },
+    fetchTrending3:{
+        title:'Trending',
+        url:`/trending/movie/week?api_key=${API_KEY}&language=en-US`
+    },
+    fetchComedy3:{
+        title:'Comedy',
+        url:`/discover/movie?api_key=${API_KEY}&with_genres=35`
+    },
+}
