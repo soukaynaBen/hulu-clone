@@ -6,7 +6,8 @@ function thumbnail({result}) {
  
     const BASE_URL='https://image.tmdb.org/t/p/original/'
     const myLoader = ({ src, width, quality }) => {
-        return `${src}?w=${width}&q=${quality || 75}`
+    
+        return `${src.trim()}?w=${width}&q=${quality || 75}`
       }
     
     return (
