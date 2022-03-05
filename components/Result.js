@@ -1,5 +1,4 @@
 import Thumbnail from '../components/thumbnail'
-import { memo } from 'react';
 function Result({results}) {
 
     return (
@@ -11,4 +10,4 @@ function Result({results}) {
     )
 }
 
-export default memo(Result);
+export default Result;
