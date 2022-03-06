@@ -1,23 +1,19 @@
 import {  ThumbUpIcon } from "@heroicons/react/outline";
 import Image from "next/image"
 import React  from 'react'
-
+import {useRouter} from 'next/router'
 function thumbnail({result}) {
- 
+     const router=useRouter();
+
     const BASE_URL='https://image.tmdb.org/t/p/original/'
-    const myLoader = ({ src, width, quality }) => {
-    
-        return `${src.trim()}?w=${width}&q=${quality || 75}`
-      }
     
     return (
-        <div className=' p-2 transition duration-200 ease-in transform group cursor-pointer sm:hover:scale-105 hover:z-50'>
+        <div onClick={()=> router.push(`/movie/${result.id}`)} className=' p-2 transition duration-200 ease-in transform group cursor-pointer sm:hover:scale-105 hover:z-50'>
             <Image className=" bg-gray-700 rounded-sm"
              layout='responsive'
              width={1920}
              height={1080}
              loading='lazy'
-             loader={myLoader}
              src={
                  `${BASE_URL}${
                      result.backdrop_path ||result.poster_path }
