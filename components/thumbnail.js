@@ -2,7 +2,7 @@ import {  ThumbUpIcon } from "@heroicons/react/outline";
 import Image from "next/image"
 import React  from 'react'
 import {useRouter} from 'next/router'
-function thumbnail({result}) {
+function Thumbnail({result}) {
      const router=useRouter();
 
     const BASE_URL='https://image.tmdb.org/t/p/original/'
@@ -34,4 +34,4 @@ function thumbnail({result}) {
     )
           
 }
-export default thumbnail;
+export default Thumbnail;

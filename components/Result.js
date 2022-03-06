@@ -1,4 +1,4 @@
-import Thumbnail from '../components/thumbnail'
+import Thumbnail from '../components/Thumbnail'
 function Result({results}) {
 
     return (
